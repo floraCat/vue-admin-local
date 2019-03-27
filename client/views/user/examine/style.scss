@@ -1,0 +1,369 @@
+
+.reportSheet {
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+  .mPagination {
+    padding: 20px 0!important;
+  }
+  .mPagination .pageSize {
+    display: none;
+  }
+  .top0 {
+    background: #fff;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border: #e5e5e5 1px solid;
+    border-radius: 5px; 
+    .mySelect {
+      .sheetFilter {
+        width: 300px;
+        float: left;
+      }
+    }
+  }
+  .main {
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    border: #e5e5e5 1px solid;
+    border-radius: 5px;
+    .handle {
+      float: left;
+      margin: 90px 0 0 20px;
+      .note {
+        color: #aaa;
+        font-size:12px;
+        margin-top: 10px;
+        line-height: 20px;
+      }
+    }
+  }
+  .list {
+    margin-top: 20px;
+    padding: 30px 20px 0;
+    background: #fff;
+    border: #e5e5e5 1px solid;
+    border-radius: 5px;
+  }
+}
+
+.tableSheet {
+  &.sheet1 {
+    float: left;
+    position: relative;
+    .table1 {
+      width: 450px;
+    }
+    .more {
+      border: none;
+      position: absolute;
+      bottom: 5px;
+      right:15px;
+    }
+  }
+  &.sheet2 {
+    padding-top: 5px;
+  }
+  &.sheet3 {
+    padding: 0 25px 20px;
+    margin-top: 20px;
+    overflow-y: scroll;
+    table {
+      background: #eee;
+    }
+  }
+  .noCont {
+    color: #888;
+    padding: 20px;
+    background: #eee;
+    margin-bottom: 20px;
+  }
+  .table2 {
+    width: 100%;
+    th {
+      background: #d7e8f8;
+      border-bottom: #c1d7ec 2px solid;
+      color: #7a7a7a;
+    }
+  } 
+  table {
+    border: 1px solid #c1d7ec;
+    td,th {
+      text-align: center;
+      border: 1px solid #c1d7ec;
+      line-height: 36px;
+      color: #666;
+    }
+  }
+}
+
+.popWinSheet {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  transition: left .4s ease;
+  left: 100%!important;
+  width:100%;
+  height: 100%;
+  min-height: 800px;
+  &.open {
+    transition: left .4s ease;
+    left: 0!important;
+  }
+  &.listDay {
+    z-index:99999;
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+  }
+  .wrap {
+    position: relative;
+    margin: 3%;
+    height: 93%;
+    min-width: 900px;
+    background: #fff;
+    border-radius: 5px;
+  }
+  .mPagination {
+    padding: 15px 0!important;
+  }
+  .mPagination .pageSize {
+    display: none;
+  }
+  .mPagination li a {
+    padding: 0 8px!important;
+    height: 28px!important;
+    line-height: 28px;
+  }
+  .top {
+    height: 60px;
+    line-height: 60px;
+    color: #666;
+    padding: 0 25px;
+    border-bottom: #dbdbdb 1px solid;
+    overflow: hidden;
+    .lt {
+      float: left;
+      height: 34px;
+      line-height: 32px;
+      color: #666;
+      padding: 0 15px 0 25px;
+      margin-top: 13px;
+      border: #c1d7ec 1px solid;
+      border-radius: 3px;
+      background: #d7e8f8 url(~assets/imgs/return.png) no-repeat 5px center;
+      background-size: 14px;
+    }
+    .rt {
+      float: right;
+      font-size: 14px;
+    }
+  }
+  .hd {
+    padding:25px 25px 0;
+    overflow: hidden;
+    .ttl {
+      float: left;
+      font-size: 16px;
+      line-height: 34px;
+      margin-right: 30px;
+      span {
+        font-weight: bold;
+        color: #3a71a3;
+      }
+    }
+  }
+}
+
+/*分页点选*/
+.sheetFilter {
+  overflow: hidden;
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: #000;
+  }
+  .label {
+    width: 70px;
+    line-height: 38px;
+    color: #666;
+  }
+  .p {
+    margin-left: 80px!important;
+    .itemList {
+      float: left;
+      width: 150px;
+      height: 32px;
+      line-height: 32px;
+      border: #ddd 1px solid;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      background: #d7e8f8;
+      ol {
+        padding-top: 0;
+        li {
+          width: 100%;
+          border: none;
+          margin: 0;
+          line-height: 30px;
+          padding-left: 10px;
+          color: #3a71a3;
+        }
+        i {
+          display: none;
+          top: 6px;
+          left: auto;
+          right: 6px;
+        }
+      }
+    }
+  }
+  .note {
+    display: none;
+  }
+  .add {
+    width: 50px!important;
+    height: 32px!important;
+    line-height: 32px!important;
+    margin-top: 0!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+  }
+
+  /*覆盖层*/
+  .infoList {
+    left: 110%!important;
+    .wrap {
+      height: 90%;
+    }
+    &.open {
+      left: 0!important;;
+    }
+  }
+  .infoList ._bg {
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+  }
+  .infoList .wrap {
+    position: relative;
+    z-index: 98;
+    width: 94%;
+    margin: 30px auto;
+    background: #fff;
+    border: #ddd 1px solid;
+  }
+
+}
+
+
+/*时间点选*/
+.myTime {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    .btn {
+      position: absolute;
+      top: 0;
+      left: 505px;
+      text-decoration: underline;
+      color: #3a71a3;
+      line-height: 32px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+    .note {
+      position: absolute;
+      top: 0;
+      left: 605px;
+      color: #bbb;
+      line-height: 32px;
+      margin-top: 8px;
+      font-size: 12px;
+    }
+    .dates {
+      width: 700px;
+      margin-top: 10px;
+      overflow: hidden;
+      .control {
+        position: relative;
+        overflow: hidden;
+        margin-right: 10px;
+        margin-bottom: 6px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        input {
+          width: 180px;
+        }
+        .delete {
+          position: absolute;
+          top: 6px;
+          left: 205px;
+        }
+      }
+    }
+    .control {
+      position: relative;
+      float: left;
+      margin-right: 15px;
+      .icon {
+        position: absolute;
+        top: 8px;
+        left: 130px;
+      }
+      span {
+        float: left;
+        line-height: 30px;
+        color: #666;
+        width: 50px;
+      }
+      input {
+        float: left;
+        text-indent: 8px;
+        width: 151px;
+        font-size: 13px;
+        border-radius: 4px;
+        color: #3a71a3;
+        border-color: #ddd;
+        background: #d7e8f8;
+        line-height: 30px;
+      }
+    }
+}
+
+
+/*按键*/
+.myBtn {
+  &.fr {
+    float: right;
+  }
+  a {
+    display: inline-block;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px;
+    background: #3a71a3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    &.em {
+      background: #c95555;
+    }
+  }
+}

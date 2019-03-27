@@ -1,0 +1,236 @@
+.myTable {
+  .box {
+    background: #fff;
+    padding: 2rem;
+    border: #e5e5e5 1px solid;
+    border-radius: .4rem;
+  }
+  .log {
+    max-width: 260px;
+    display: inline-block;
+    word-wrap: break-word;
+    s {
+      text-decoration: none;
+    }
+  }
+}
+
+.table {
+  background-color: white;
+  color: #363636;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border: #c1d7ec 1px solid;
+}
+.table .hasBg {
+  min-width: 52px;
+  display: inline-block;
+  padding: 0 6px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 21px;
+  border-radius: 4px;
+  .clickAble {
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
+.table .zs {
+  background: #3a71a3;
+}
+
+.table .green {
+  background: #389440;
+}
+
+.table .gray {
+  background: #bbb;
+}
+
+.table .online {
+  background: #389440;
+}
+
+.table .offline {
+  background: #e54c4c;
+}
+
+.table .new {
+  background: #1a4997;
+}
+
+.table .other {
+  background: #b9860c;
+}
+
+.table a.offline {
+  background: transparent;
+  color: #e54c4c;
+}
+.table a.other {
+  background: transparent;
+  color: yellow;
+}
+
+.table img.thumbnail {
+  max-height: 80px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.table td.hasImg {
+  padding: 0.4rem!important;
+}
+.table td .noClick {
+  cursor: auto!important;
+  color: #aaa;
+}
+.table td i.fa-podcast{
+  color: #c95555;
+}
+.table td i.fa-spinner{
+  color: #3a71a3;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+  -o-animation: rotate 3s linear infinite;
+  animation: rotate 3s linear infinite;
+}
+.table td .noClick i {
+  color: #bbb!important;
+
+}
+
+/*loading 旋转*/
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+    to{-moz-transform: rotate(359deg)}
+}
+@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+    to{-o-transform: rotate(359deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}
+
+
+.table td,
+.table th {
+  position: relative;
+  border-right: #c1d7ec 1px solid;
+  border-bottom: #c1d7ec 1px solid;
+  padding: 0.8em 0.75em;
+  vertical-align: top;
+  text-align: center;
+}
+.table td {
+  color: #666;
+}
+
+.table td.is-icon ol {
+  margin: 0 auto;
+  width: 110px;
+}
+.table td.is-icon ol.lg {
+  width: 140px;
+}
+
+.table tbody tr:hover {
+  background: #d7e8f8;
+}
+.table th.numTh {
+  width: 12px;
+}
+.table th.checkTh {
+  padding: 0 1.5rem;
+}
+
+.table td.is-narrow,
+.table th.is-narrow {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.table th {
+  color: #363636;
+}
+
+.table tr:hover {
+  background-color: #fafafa;
+}
+
+.table thead td,
+.table thead th {
+  background: #d7e8f8;
+  border-bottom: #c1d7ec 2px solid;
+  color: #7a7a7a;
+}
+
+.table tfoot td,
+.table tfoot th {
+  border-width: 2px 0 0;
+  color: #7a7a7a;
+}
+
+.table tbody tr:last-child td,
+.table tbody tr:last-child th {
+  border-bottom-width: 0;
+}
+
+.table.is-bordered td,
+.table.is-bordered th {
+  border-width: 1px;
+}
+
+.table.is-bordered tr:last-child td,
+.table.is-bordered tr:last-child th {
+  border-bottom-width: 1px;
+}
+
+.table.is-narrow td,
+.table.is-narrow th {
+  padding: 0.25em 0.5em;
+}
+
+.table.is-striped tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table.is-striped tbody tr:nth-child(even):hover {
+  background-color: whitesmoke;
+}
+
+
+/*---------------------------后加2018-----*/
+.dicTable {
+  float: right;
+  width: 11rem;
+  margin-right: 1rem;
+}
+
+/*列表加载loading*/
+.xmLoad {
+  margin: 30px auto;
+  width: 50px;
+  height: 50px;
+}
+
+.datePicker {
+  float: left;
+  width: 182px; 
+  input {
+    width: 100%!important;
+    font-size: 12px!important;
+  }
+}

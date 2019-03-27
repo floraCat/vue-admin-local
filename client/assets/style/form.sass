@@ -1,0 +1,330 @@
+
+/*
+ * 表单通用样式
+ */
+
+.formCtrl
+  *display: inline-block;
+  &:after
+    content: "."; display: block; height: 0; clear: both; visibility: hidden;
+  .p
+    margin-left: 8rem;
+    .txt
+      line-height: 2.585rem;
+      color: #666;
+      font-size: .9rem;
+  .label
+    float: left;
+    color: #363636;
+    display: block;
+    line-height: 2.58rem;
+    width: 7.8rem;
+    font-size: 1rem;
+    text-align: right;
+    .must
+      color: red;
+      font-weight: bold;
+  .label:after
+    content: '：';
+
+  &.btns
+    overflow: hidden;
+    margin-top: 2rem;
+
+  .input,
+  .textarea
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.585em;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    position: relative;
+    vertical-align: top;
+    background-color: white;
+    color: #363636;
+    border: #c1d7ec 1px solid;
+    max-width: 100%;
+    &:-moz-placeholder 
+      color: #bababa;
+    &:-ms-input-placeholder 
+      color: #bababa;
+    &::-webkit-input-placeholder 
+      color: #bababa;
+
+
+
+  .textarea
+    display: block;
+    line-height: 1.25;
+    max-height: 600px;
+    max-width: 100%;
+    min-height: 120px;
+    min-width: 100%;
+    padding: 10px;
+    resize: vertical;
+
+  .checkbox,
+  .radio
+    float: left;
+    position: relative;
+    padding-left: 1.8rem;
+    margin: .7rem 2rem 0 0;
+    line-height: 1.3rem;
+
+  .checkbox:hover,
+  .radio:hover
+    color: #363636;
+
+  .checkbox.is-disabled,
+  .radio.is-disabled
+    color: #7a7a7a;
+    pointer-events: none;
+
+  .checkbox.is-disabled input,
+  .radio.is-disabled input
+    pointer-events: none;
+
+  .radio + .radio
+    margin-left: 0.5em;
+
+  .radio
+    span
+      padding-left: 2.3rem;
+
+  .select
+    display: inline-block;
+    height: 2.5em;
+    position: relative;
+    vertical-align: top;
+
+._check
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  margin-top: -0.65rem;
+  margin-left: -0.65rem;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: $zLine 1px solid;
+  border-radius: 3px;
+  background: #fafafa;
+
+  i
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2rem;
+    display: none;
+
+._checked
+  background: $zs;
+  border: $zs 1px solid;
+
+  i
+    display: block;
+    color: #fff;
+
+
+
+// .select:after
+//   border: 1px solid #3a71a3;
+//   border-right: 0;
+//   border-top: 0;
+//   content: " ";
+//   display: block;
+//   height: 0.5em;
+//   pointer-events: none;
+//   position: absolute;
+//   -webkit-transform: rotate(-45deg);
+//   transform: rotate(-45deg);
+//   width: 0.5em;
+//   margin-top: -0.375em;
+//   right: 1.125em;
+//   top: 50%;
+//   z-index: 4;
+
+// .select select
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   border: none;
+//   border-radius: 3px;
+//   box-shadow: none;
+//   display: -webkit-inline-box;
+//   display: -ms-inline-flexbox;
+//   display: inline-flex;
+//   font-size: 1rem;
+//   height: 2.285em;
+//   -webkit-box-pack: start;
+//   -ms-flex-pack: start;
+//   justify-content: flex-start;
+//   line-height: 1.5;
+//   padding-left: 0.75em;
+//   padding-right: 0.75em;
+//   position: relative;
+//   vertical-align: top;
+//   background-color: white;
+//   border: 1px solid #dbdbdb;
+//   color: #363636;
+//   cursor: pointer;
+//   display: block;
+//   font-size: 1em;
+//   outline: none;
+//   padding-right: 2.5em;
+
+// .select select:focus, .select select.is-focused, .select select:active, .select select.is-active
+//   outline: none;
+
+// .select select[disabled], .select select.is-disabled
+//   pointer-events: none;
+
+// .select select:hover, .select select.is-hovered
+//   border-color: #b5b5b5;
+
+// .select select:focus, .select select.is-focused, .select select:active, .select select.is-active
+//   border-color: #3a71a3;
+
+// .select select[disabled], .select select.is-disabled
+//   background-color: whitesmoke;
+//   border-color: whitesmoke;
+//   box-shadow: none;
+//   color: #7a7a7a;
+
+// .select select[disabled]::-moz-placeholder, .select select.is-disabled::-moz-placeholder
+//   color: rgba(54, 54, 54, 0.3);
+
+// .select select[disabled]::-webkit-input-placeholder, .select select.is-disabled::-webkit-input-placeholder
+//   color: rgba(54, 54, 54, 0.3);
+
+// .select select[disabled]:-moz-placeholder, .select select.is-disabled:-moz-placeholder
+//   color: rgba(54, 54, 54, 0.3);
+
+// .select select[disabled]:-ms-input-placeholder, .select select.is-disabled:-ms-input-placeholder
+//   color: rgba(54, 54, 54, 0.3);
+
+// .select select:hover
+//   border-color: #b5b5b5;
+
+// .select select::ms-expand
+//   display: none;
+
+// .select:hover:after
+//   border-color: #363636;
+
+// .select.is-small
+//   border-radius: 2px;
+//   font-size: 0.75rem;
+
+// .select.is-medium
+//   font-size: 1.25rem;
+
+// .select.is-large
+//   font-size: 1.5rem;
+
+// .select.is-fullwidth
+//   width: 100%;
+
+// .select.is-fullwidth select
+//   width: 100%;
+
+.formBtn
+  float: left;
+  font-size: 1rem;
+  text-align: center;
+  width: auto;
+  height: 2.58rem;
+  line-height: 2.58rem;
+  padding: 0 1rem;
+  margin-right: 1rem;
+  background: #f8f8f8;
+  cursor: pointer;
+  border: #ddd 1px solid;
+  border-radius: .3rem;
+  &.on
+    background: $zs;
+    color: #fff;
+    border: none;
+
+
+
+/*搜索*/
+.xmSearch 
+  padding: 2rem 1rem 1.2rem;
+  margin: 1rem 0;
+  border-top: #e5e5e5 1px solid;
+  border-radius: 5px;
+
+  &:after 
+    content: '.'; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden;
+  
+  li 
+    float: left; 
+    margin-right: 2rem;
+    margin-bottom: 10px;
+    line-height: 3rem;
+
+    label
+      float: left;
+      line-height: 2.6rem;
+
+    input 
+      float: left;
+      width: auto;
+      height: 2.6rem;
+      padding: .5rem 1rem;
+      line-height: 1.6rem;
+      border: $zLine 1px solid;
+      outline: none;
+      border-radius: 5px;
+      background: #fff;
+  
+      &.btn 
+        font-size: 1rem;
+        background: $zs;
+        color: #fff;
+        border: $zs 1px solid;
+        cursor: pointer;
+
+  li.li
+    margin-right: 1rem;
+
+
+.xmSearch 
+
+  select
+      width: 8rem;
+      height: 34px;
+      font-size: 14px;
+      line-height: 34px;
+      border: #c1d7ec 1px solid;
+      border-radius: 5px;
+
+
+
+
+      /*-------------------------后加2018-----*/
+.table
+  .is-icon
+    .selected
+      i
+        color: green;
